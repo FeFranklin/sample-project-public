@@ -1,8 +1,11 @@
 language: node_js
-
 node_js:
-  - "12"
-
+- '12'
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: sample-prject-public
+  api_key:
+    secure: V6c4kvyhaDIo2oPeRsNMRCI7ceyH1APrPSoFJyt1ir0AUwMNu+Q8f0KrsDuvYrhuF6PFAqnJ23Zggxwh3gQ1tsAbs/ObDSPCJTlhy6VMetbvz9EAt23bkGiiT/VFAPh9soBrBh2grNnI2pJU2yoId5ktYvaYL7EGsbLlzQU8utKuucIBa6Lx60VqR0BEqlfNSA3BrCfsINntH6Tp17JazSXlV6vrJHLncZT8mzLMWsVE9eemvKYeHGO2xllQqD8qbMjbbI+F3wFFLS4PvxRfKxHu3AFqgo0vcwicSjFm8qINDNWt/UptKCvHGMsuE6htFdxCNZ406xcVTPcQb5pNIiq3Wb8HgPMTYwqnxfIqUm67Gb/a0Hv55i8BTcVb/BCWe5O2w2vd0B3U182NrKsjTjOWWwk/qZyB6+HxDwYgqMyih2f/zpMA6hUbZgfHK1aIfKcbt+R+satbAhwIE6UpCS0mfGaU1Py4hCMaLXDMetumbR2R3bqcErF5pSGMOjpjZ6fwQYhZkhuDVkx71Zi89T69T84DOWERbugNOEG6vN2goBWx6bVdN9cacwJYh34Vc6kb3/MHOccuKUMAqc4s1i5TNKNPNFxqf/yRtoZIEZ1KRYQE0ZrATrCPj2AvzAH3HJ607qsCptyvaiypdtCxMCVfO3Ys9nBj41enAxiAcIQ=
