@@ -1,0 +1,43 @@
+{
+  "name": "test_telemetry",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Testing telemetry package",
+  "keywords": [
+    "test",
+    "telemetry"
+  ],
+  "author": "Felipe <felipe.franklin@ibm.com>",
+  "homepage": "https://github.com/FeFranklin/sample-project-public#readme",
+  "license": "ISC",
+  "main": "lib/test_telemetry.js",
+  "bin": {
+    "test_telemetry": "bin/test_telemetry"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeFranklin/sample-project-public.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "postinstall": "node ./bin/test_telemetry"
+  },
+  "dependencies": {
+    "process": "^0.11.10",
+    "yargs": "^16.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/FeFranklin/sample-project-public/issues"
+  },
+  "devDependencies": {
+    "winston": "^3.3.3"
+  }
+}
