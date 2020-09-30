@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const process = require('process');
+// eslint-disable-next-line no-unused-expressions
+require('../lib/cli')().parse(process.argv.slice(2));
+// Explicitly requiring global variable process
+const { logger } = require('../lib/logger');
+
+process.on('unhandledRejection', error => {
+  logger.error(error);
+});
+  // Grabs the value after --name
+let nameValue = 'human';
+if (process.argv[2]){
+  nameValue = process.argv[2];
+}
+const name = (nameValue || 'human');
+
+try {
+  const test_Telemetry = require('../lib/test_telemetry');
+  test_Telemetry(name);
+} catch (error) {
+  logger.error(error);
+}

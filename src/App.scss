@@ -1,3 +1,11 @@
+@import "~carbon-components/scss/components/ui-shell/header";
+@import "~carbon-components/scss/components/button/button";
+
+.body-content__block {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
 .App {
   text-align: center;
 }
